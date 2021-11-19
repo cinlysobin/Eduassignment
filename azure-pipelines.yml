@@ -1,0 +1,18 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
+- script: |
+    curl -X POST -u cinlysobin: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 -d "{\"title\":\"Great feature added\",\"body\": \"Please pull the great change made in to master branch\",\"head\": \"apicheck\",\"base\": \"master\"}" https://api.github.com/repos/cinlysobin/Eduassignment/pulls
+  displayName: 'Run a multi-line script'
