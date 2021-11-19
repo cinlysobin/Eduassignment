@@ -15,4 +15,4 @@ steps:
 
 - script: |
     curl -X POST -u cinlysobin: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 -d "{\"title\":\"Great feature added\",\"body\": \"Please pull the great change made in to master branch\",\"head\": \"apicheck\",\"base\": \"master\"}" https://api.github.com/repos/cinlysobin/Eduassignment/pulls
-  displayName: 'Run a multi-line script'
+  
